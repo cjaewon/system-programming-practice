@@ -210,7 +210,7 @@ int parse_and_excute(char argv[15][50], int argc) {
   }
 
   if (strcmp(unit_cmd[0], "cd") == 0) {
-    if (argc < 2) {
+    if (unit_cmd_idx < 2) {
       printf("error: argv lacks\n");
 
       return -1;
